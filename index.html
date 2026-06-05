@@ -6,7 +6,7 @@
     <title>Actividad Bootstrap</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body class="bg-light">
@@ -122,33 +122,37 @@
     <!-- Formulario -->
     <section >
 
-        <h2>Contacto</h2>
+        <h2 class="h2-form">Nuevo producto</h2>
 
-        <form>
+        <form id="formulario">
 
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre">
-
-            <br><br>
-
-            <label for="email">Email</label>
-            <input type="email" id="email">
+            <label for="exampleInputEmail1" class="form-label">Nombre del producto</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
             <br><br>
 
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje"></textarea>
+            <label for="email">Cantidad en stock</label>
+            <input type="number" id="cantidad" class="form-control">
 
             <br><br>
 
-            <button type="submit">Enviar</button>
+            <div class="mb-1"></div>
+                <label for="categoria">Categoría</label>
+                <select class="form-select">
+                    <option selected disabled>Seleccionar categoría</option>
+                    <option>Electrónica</option>
+                    <option>Periféricos</option>
+                    <option>Accesorios</option>
+                    <option>Componentes</option>    
+                </select>
 
+             <button type="submit" class="btn btn-primary" id="btn-agregarproducto">Agregar producto</button>
         </form>
 
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
         <p>Equipo NexusTech - 2026</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
