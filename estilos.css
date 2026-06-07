@@ -4,11 +4,15 @@
     box-sizing: border-box;
 }
 
+#hero{
+    background-color: gray !important;
+}
+
 form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-left: 15px;
+  align-items: center;
+  margin-bottom: 20px;
   gap: 5px 5px 5px;
   width: 100%;
   max-height: 500px;
@@ -20,14 +24,9 @@ label {
   gap: 6px;
 }
 
-.h2-form {
- margin-left: 15px;
-}
-
 #btn-agregarproducto {
     gap: 10px;
     width: 15%;
-    margin-left: 300px;
     margin-top: 30px;
 
 }
@@ -38,9 +37,4 @@ label {
 
 .form-select {
     width: 50%
-}
-
-#footer {
-    text-align: right;
-    margin-right: 15px;
 }
