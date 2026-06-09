@@ -3,9 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --colorPrimario: white;
+    --colorSecundario: #343a40;
+    --colorBoton: rgb(161, 36, 36) !important;
+    --colorBotonHover: rgb(175, 82, 82) !important;
+}
 
-#hero{
-    background-color: gray !important;
+.btn-primary{
+    background-color: var(--colorBoton);
+    border-color: var(--colorSecundario);
+}
+
+.btn-primary:hover{
+    background-color:var(--colorBotonHover);
+    border-color: var(--colorSecundario);
 }
 
 form {
